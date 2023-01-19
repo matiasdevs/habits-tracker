@@ -16,11 +16,12 @@ header {
   justify-content: space-between;
 
   padding: 48px;
+  position: fixed;
+  width: 100%;
 }
 
 button {
-  width: 216px;
-  height: 52px;
+
   border: 1px solid #8B5CF6;
   border-radius: 8px;
   padding: 16px 24px;
@@ -34,11 +35,13 @@ button {
 
   display: flex;
   align-items: center;
+  
 }
 
 #form-habits {
   display: flex;
-  padding: 48px;
+  padding: 182px 48px 48px;
+  width: fit-content;
 }
 
 .days {
@@ -69,6 +72,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px red solid;
 }
 
 .habits {
@@ -91,4 +95,10 @@ input {
 input:checked {
   background: #8B5CF6;
   border: 2px solid #A78BFA;
+}
+
+@media (max-width: 570px){
+  button > div {
+    display: none;
+  }
 }
