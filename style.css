@@ -32,10 +32,15 @@ button {
   font-size: 16px;
   color: white;
   line-height: 125%;
+  
 
   display: flex;
   align-items: center;
   
+}
+
+button:hover{
+  cursor: pointer;
 }
 
 #form-habits {
@@ -72,7 +77,6 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px red solid;
 }
 
 .habits {
